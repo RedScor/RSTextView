@@ -14,6 +14,7 @@
 		EC31E03E1AFB097100B03F19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC31E03D1AFB097100B03F19 /* Images.xcassets */; };
 		EC31E0411AFB097100B03F19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC31E03F1AFB097100B03F19 /* LaunchScreen.xib */; };
 		EC31E04D1AFB097100B03F19 /* RSTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC31E04C1AFB097100B03F19 /* RSTextViewTests.m */; };
+		EC31E0591AFB099D00B03F19 /* RSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC31E0581AFB099D00B03F19 /* RSTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		EC31E0461AFB097100B03F19 /* RSTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC31E04B1AFB097100B03F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC31E04C1AFB097100B03F19 /* RSTextViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSTextViewTests.m; sourceTree = "<group>"; };
+		EC31E0571AFB099D00B03F19 /* RSTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTextView.h; sourceTree = "<group>"; };
+		EC31E0581AFB099D00B03F19 /* RSTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		EC31E02F1AFB097100B03F19 /* RSTextView */ = {
 			isa = PBXGroup;
 			children = (
+				EC31E0561AFB098A00B03F19 /* RSTextView */,
 				EC31E0341AFB097100B03F19 /* AppDelegate.h */,
 				EC31E0351AFB097100B03F19 /* AppDelegate.m */,
 				EC31E0371AFB097100B03F19 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				EC31E04B1AFB097100B03F19 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC31E0561AFB098A00B03F19 /* RSTextView */ = {
+			isa = PBXGroup;
+			children = (
+				EC31E0571AFB099D00B03F19 /* RSTextView.h */,
+				EC31E0581AFB099D00B03F19 /* RSTextView.m */,
+			);
+			path = RSTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC31E0591AFB099D00B03F19 /* RSTextView.m in Sources */,
 				EC31E0391AFB097100B03F19 /* ViewController.m in Sources */,
 				EC31E0361AFB097100B03F19 /* AppDelegate.m in Sources */,
 				EC31E0331AFB097100B03F19 /* main.m in Sources */,

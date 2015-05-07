@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "RSTextView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet RSTextView *nibTextView;
 
 @end
 
@@ -16,7 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    RSTextView *textView = [[RSTextView alloc]initWithFrame:CGRectMake(0, 100, width, 200)];
+    textView.placeholder = @"input text here ...";
+    [self.view addSubview:textView];
+
 }
 
 - (void)didReceiveMemoryWarning {
